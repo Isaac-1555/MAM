@@ -1,0 +1,781 @@
+/* ========================================
+   CSS RESET & BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #414c75;
+    background-color: #ffffff;
+}
+
+img {
+    display: block;
+}
+
+/* Only photos should scale automatically */
+.story-image,
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+/* ========================================
+   CONTAINER
+   ======================================== */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ========================================
+   DISCLAIMER BAR
+   ======================================== */
+.disclaimer {
+    background-color: #2a2c34;
+    padding: 1.1875rem 0;
+}
+
+.disclaimer-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.warning-icon {
+    width: 20px;
+    height: 17.5px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.disclaimer p {
+    color: #fffdfa;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    margin: 0;
+}
+
+.disclaimer strong {
+    font-weight: 700;
+}
+
+/* ========================================
+   HEADER
+   ======================================== */
+.header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 0.5rem 0;
+}
+
+.header-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo {
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: contain;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-menu a {
+    font-size: 1.1875rem;
+    font-weight: 500;
+    color: #4b5563;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #1b2851;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.phone-number {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.phone-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.phone-number span {
+    font-size: 1.1875rem;
+    font-weight: 500;
+    color: #1b2851;
+    letter-spacing: 0.02em;
+}
+
+.btn-appointment {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #1b2851;
+    border-radius: 9999px;
+    font-size: 1rem;
+    color: #1b2851;
+    transition: all 0.3s ease;
+}
+
+.btn-appointment:hover {
+    background-color: #1b2851;
+    color: #ffffff;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero-about {
+    background-color: #eceefb;
+    padding: 6rem 0 5rem;
+    text-align: center;
+}
+
+.hero-about h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1b2851;
+    line-height: 1.25;
+    margin-bottom: 1.5rem;
+}
+
+.hero-description {
+    font-size: 1.1875rem;
+    line-height: 1.6;
+    color: #414c75;
+    max-width: 64.9375rem;
+    margin: 0 auto;
+    letter-spacing: 0.02em;
+}
+
+/* ========================================
+   OUR STORY SECTION
+   ======================================== */
+.our-story {
+    padding: 5rem 0;
+    background-color: #ffffff;
+}
+
+.story-content {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.story-text {
+    flex: 1;
+    max-width: 46.125rem;
+}
+
+.story-text h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1b2851;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    letter-spacing: 0.02em;
+}
+
+.story-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #414c75;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.02em;
+}
+
+.story-text p:last-child {
+    margin-bottom: 0;
+}
+
+.story-image-card {
+    flex-shrink: 0;
+    width: 37.3125rem;
+    background-color: #e7edf8;
+    border-radius: 0.75rem;
+    padding: 2rem;
+}
+
+.story-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.story-quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.67;
+    color: #2e3a63;
+    text-align: center;
+    font-style: italic;
+}
+
+/* ========================================
+   WHY WE EXIST SECTION
+   ======================================== */
+.why-exist {
+    background-color: #f7f4f0;
+    padding: 5rem 0;
+}
+
+.why-exist h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1b2851;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+.why-content {
+    max-width: 53rem;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.why-content p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.67;
+    color: #414c75;
+    margin-bottom: 1.5rem;
+}
+
+.why-content p:last-child {
+    margin-bottom: 0;
+}
+
+.quote-card {
+    max-width: 42rem;
+    margin: 0 auto;
+    background-color: #e7edf8;
+    border-radius: 0.75rem;
+    padding: 2rem 2rem 3.5rem;
+    text-align: center;
+}
+
+.quote-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #1b2851;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+}
+
+.quote-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.quote-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1b2851;
+}
+
+/* ========================================
+   VISION & MISSION SECTION
+   ======================================== */
+.vision-mission {
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+.vision-mission h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1b2851;
+    text-align: center;
+    margin-bottom: 3rem;
+    line-height: 1.1;
+}
+
+.cards-wrapper {
+    display: flex;
+    gap: 3rem;
+    max-width: 72rem;
+    margin: 0 auto;
+}
+
+.card {
+    flex: 1;
+    border-radius: 0.75rem;
+    padding: 2rem;
+}
+
+.vision-card {
+    background-color: #e7edf8;
+}
+
+.mission-card {
+    background-color: #f7f4f0;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #1b2851;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon img {
+    width: 20.25px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Mission icon has different width */
+.mission-card .card-icon img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.card h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1b2851;
+    line-height: 1.33;
+}
+
+.card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #414c75;
+}
+
+.mission-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.mission-list li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.56;
+    color: #414c75;
+    padding-left: 1.75rem;
+    position: relative;
+}
+
+.mission-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #1b2851;
+    border-radius: 50%;
+}
+
+/* ========================================
+   CTA SECTION
+   ======================================== */
+.cta-section {
+    background-color: #e7edf8;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1b2851;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.cta-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.65;
+    color: #414c75;
+    max-width: 41.375rem;
+    margin: 0 auto 2.5rem;
+}
+
+.btn-book-session {
+    background-color: #1b2851;
+    color: #f7f4f0;
+    padding: 1.5rem 4rem;
+    border-radius: 9999px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 2rem;
+}
+
+.btn-book-session:hover {
+    background-color: #2e3a63;
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    width: 16px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    color: #414c75;
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+.footer {
+    background-color: #1b2851;
+    padding: 3rem 0 0;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-icon {
+    width: 2rem;
+    height: 2rem;
+    background-color: #4b5563;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo-icon img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.footer-brand-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+.footer-tagline {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.64;
+    color: #d1d5db;
+}
+
+.footer h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer ul li a {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    color: #d1d5db;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffffff;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.contact-list li img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+/* Location icon has different dimensions */
+.contact-list li:last-child img {
+    width: 10.5px;
+    height: 14px;
+    object-fit: contain;
+}
+
+.contact-list li span {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    color: #d1d5db;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons a {
+    width: 20px;
+    height: 20px;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    opacity: 0.7;
+}
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Instagram and LinkedIn have different widths */
+.social-icons a:nth-child(2) img,
+.social-icons a:nth-child(3) img {
+    width: 17.5px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.connect-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.67;
+    color: #9ca3af;
+}
+
+.footer-bottom {
+    border-top: 1px solid #374151;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.43;
+    color: #9ca3af;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+/* Tablet (768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /* Header */
+    .header-container {
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+    }
+
+    .logo {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .nav-menu a {
+        font-size: 1rem;
+    }
+
+    .header-right {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .btn-appointment {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hero */
+    .hero-about {
+        padding: 4rem 0 3rem;
+    }
+
+    .hero-about h1 {
+        font-size: 2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    /* Our Story */
+    .story-content {
+        flex-direction: column;
+    }
+
+    .story-text h2 {
+        font-size: 2rem;
+    }
+
+    .story-image-card {
+        width: 100%;
+    }
+
+    /* Cards */
+    .cards-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Footer */
+    .footer-columns {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+
+    .disclaimer-content {
+        padding: 0 1rem;
+        gap: 0.75rem;
+    }
+
+    .hero-about h1 {
+        font-size: 1.75rem;
+    }
+
+    .story-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .why-exist h2,
+    .vision-mission h2,
+    .cta-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .btn-book-session {
+        padding: 1.25rem 2.5rem;
+        font-size: 1rem;
+    }
+}
