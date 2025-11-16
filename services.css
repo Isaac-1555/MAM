@@ -187,24 +187,38 @@ img {
     gap: 3.25rem;
 }
 
+/* Service Item - Default: Text LEFT, Image RIGHT */
 .service-item {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 3rem;
+    width: 100%;
 }
 
+/* Service Item Reverse - Image LEFT, Text RIGHT */
 .service-item.reverse {
     flex-direction: row-reverse;
 }
 
+/* Service Content Column */
 .service-content {
-    flex: 1;
-    max-width: 37.25rem;
+    width: 48%;
+    min-width: 37.25rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
+/* Service Header (Icon + Title) */
+.service-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Icon Wrapper - Circular Background */
 .service-icon-wrapper {
     width: 2.6875rem;
     height: 2.6875rem;
@@ -213,24 +227,27 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    flex-shrink: 0;
 }
 
+/* Icon Image - Exact Figma Size */
 .service-icon {
     width: 1.6125rem;
     height: 1.6125rem;
     object-fit: contain;
 }
 
+/* Service Title */
 .service-content h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem;
     font-weight: 600;
     color: #1b2851;
     letter-spacing: 0.035rem;
-    margin-bottom: 1rem;
+    margin: 0;
 }
 
+/* Service Description */
 .service-content p {
     font-family: 'Lato', sans-serif;
     font-size: 1.1875rem;
@@ -241,11 +258,14 @@ img {
     margin-bottom: 0.5rem;
 }
 
+/* Service Image Column */
 .service-image {
-    flex: 1;
-    max-width: 37rem;
+    width: 48%;
+    min-width: 37rem;
+    flex-shrink: 0;
 }
 
+/* Service Image - Rounded Corners */
 .service-image img {
     width: 100%;
     height: 25rem;
@@ -596,18 +616,15 @@ img {
         padding: 3rem 2rem;
     }
 
-    .service-item {
-        flex-direction: column;
-        gap: 2rem;
+    /* Tablet: Reduce column widths but keep alternating */
+    .service-content {
+        width: 48%;
+        min-width: auto;
     }
 
-    .service-item.reverse {
-        flex-direction: column;
-    }
-
-    .service-content,
     .service-image {
-        max-width: 100%;
+        width: 48%;
+        min-width: auto;
     }
 
     .areas-section {
@@ -697,8 +714,26 @@ img {
         gap: 2.5rem;
     }
 
+    /* Mobile: ALL items stack the same way - Content on top, Image below */
     .service-item {
+        flex-direction: column !important;
         gap: 1.5rem;
+    }
+
+    /* Mobile: Remove alternation - all items stack content-then-image */
+    .service-item.reverse {
+        flex-direction: column !important;
+    }
+
+    /* Mobile: Full width columns */
+    .service-content {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .service-image {
+        width: 100%;
+        min-width: auto;
     }
 
     .service-content h2 {
