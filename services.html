@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="mobile-menu.js" defer></script>
 </head>
 <body>
     <!-- Disclaimer Bar -->
@@ -38,9 +39,35 @@
                     <span>+1(604) 716-9979</span>
                 </div>
                 <button class="btn-appointment">Book Appointment Now</button>
+                
+                <!-- Hamburger Menu Button (Mobile Only) -->
+                <button class="hamburger-btn" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay"></div>
+
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-close" aria-label="Close menu">&times;</button>
+        <nav class="mobile-menu-nav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="therapist.html">Therapist</a>
+            <a href="#">Article</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <button class="btn-appointment-mobile">Book Appointment Now</button>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
