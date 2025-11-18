@@ -887,9 +887,21 @@ ul {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 4rem; /* Increased gap since wrappers are hidden */
     margin: 4rem auto;
     max-width: 1200px;
+    position: relative; /* For absolute line */
+}
+
+.steps-container::before {
+    content: '';
+    position: absolute;
+    top: 26px; /* Center of 52px icon */
+    left: 10%; /* Approximate start to span across icons */
+    width: 80%; /* Approximate width */
+    height: 1px;
+    background-color: #e0bfb8; /* Brand accent color */
+    z-index: 1;
 }
 
 .step {
@@ -901,8 +913,8 @@ ul {
 }
 
 .step-icon-wrapper {
-    width: 80px;
-    height: 80px;
+    width: 52px;
+    height: 52px;
     margin-bottom: 1rem;
     background-color: #fff;
     border: 1px solid #e5e7eb;
@@ -915,8 +927,8 @@ ul {
 }
 
 .step-icon {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
@@ -939,16 +951,16 @@ ul {
 }
 
 .connector-line-wrapper {
-    padding-top: 40px;
-    flex: 1;
-    max-width: 200px;
-    display: flex;
-    justify-content: center;
+    display: none;
 }
 
 .connector-line {
-    width: 100%;
-    height: auto;
+    display: none;
+}
+
+.how-it-works .btn-primary {
+    margin: 0 auto;
+    width: fit-content;
 }
 
 /* ========================================================
@@ -1160,6 +1172,10 @@ ul {
         flex-direction: column;
         align-items: center;
         gap: 3rem;
+    }
+    
+    .steps-container::before {
+        display: none;
     }
     
     .connector-line-wrapper {
