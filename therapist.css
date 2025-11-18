@@ -603,8 +603,8 @@ h3 {
     list-style: none;
 }
 
-.footer-column li {
-    margin-bottom: 0.5rem;
+ .footer-column li {
+    margin-bottom: 1rem; /* 16px gap between footer list items */
 }
 
 .footer-column a {
@@ -623,13 +623,14 @@ h3 {
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 1rem; /* 16px gap between contact rows */
 }
 
 .contact-item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-bottom: 0; /* prevent extra spacing on top of gap */
 }
 
 .contact-icon {
