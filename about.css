@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.6;
     color: #414c75;
@@ -162,10 +162,13 @@ button {
 
 .btn-appointment {
     padding: 0.75rem 1.5rem;
+    background-color: transparent;
     border: 1px solid #1b2851;
     border-radius: 9999px;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #1b2851;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -184,7 +187,7 @@ button {
 }
 
 .hero-about h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     font-weight: 700;
     color: #1b2851;
@@ -222,7 +225,7 @@ button {
 }
 
 .story-text h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: #1b2851;
@@ -258,7 +261,7 @@ button {
 }
 
 .story-quote {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     line-height: 1.67;
     color: #2e3a63;
@@ -275,7 +278,7 @@ button {
 }
 
 .why-exist h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     color: #1b2851;
@@ -291,7 +294,7 @@ button {
 }
 
 .why-content p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     line-height: 1.67;
     color: #414c75;
@@ -329,7 +332,7 @@ button {
 }
 
 .quote-text {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     font-weight: 600;
     line-height: 1.4;
@@ -345,7 +348,7 @@ button {
 }
 
 .vision-mission h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     color: #1b2851;
@@ -407,7 +410,7 @@ button {
 }
 
 .card h3 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
     color: #1b2851;
@@ -415,7 +418,7 @@ button {
 }
 
 .card p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     line-height: 1.6;
     color: #414c75;
@@ -428,7 +431,7 @@ button {
 }
 
 .mission-list li {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     line-height: 1.56;
     color: #414c75;
@@ -457,7 +460,7 @@ button {
 }
 
 .cta-section h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     color: #1b2851;
@@ -466,7 +469,7 @@ button {
 }
 
 .cta-description {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     line-height: 1.65;
     color: #414c75;
@@ -482,7 +485,7 @@ button {
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -501,7 +504,7 @@ button {
 }
 
 .tagline {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.43;
     color: #414c75;
@@ -549,21 +552,21 @@ button {
 }
 
 .footer-brand-name {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     line-height: 1.4;
     color: #ffffff;
 }
 
 .footer-tagline {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.64;
     color: #d1d5db;
 }
 
 .footer h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
@@ -578,7 +581,7 @@ button {
 }
 
 .footer ul li a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.43;
     color: #d1d5db;
@@ -611,7 +614,7 @@ button {
 }
 
 .contact-list li span {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.43;
     color: #d1d5db;
@@ -649,7 +652,7 @@ button {
 }
 
 .connect-description {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.75rem;
     line-height: 1.67;
     color: #9ca3af;
@@ -662,7 +665,7 @@ button {
 }
 
 .footer-bottom p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.43;
     color: #9ca3af;

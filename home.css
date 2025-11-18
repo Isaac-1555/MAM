@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #2a2c34;
@@ -42,30 +42,30 @@ ul {
 }
 
 /* ========================================================
-   DISCLAIMER BAR (from services)
+   DISCLAIMER BAR
    ======================================================== */
-.disclaimer-bar {
+.disclaimer {
     background-color: #2a2c34;
-    padding: 1.1875rem 4rem;
+    padding: 1.1875rem 0;
 }
 
 .disclaimer-content {
-    max-width: 90rem;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 4rem;
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
 
-.disclaimer-icon {
-    width: 1.25rem;
-    height: 1.09375rem;
+.warning-icon {
+    width: 20px;
+    height: 17.5px;
     flex-shrink: 0;
     object-fit: contain;
 }
 
 .disclaimer-content p {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 0.875rem;
     line-height: 1.625rem;
     color: #fffdfa;
@@ -77,28 +77,28 @@ ul {
 }
 
 /* ========================================================
-   HEADER (from services)
+   HEADER
    ======================================================== */
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e7eb;
-    padding: 0.5rem 3.25rem;
+    padding: 0.5rem 0;
 }
 
 .header-container {
-    max-width: 90rem;
+    max-width: 1440px;
     margin: 0 auto;
+    padding: 0 3.25rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 7.25rem;
+    gap: 2rem;
 }
 
 .logo {
     width: 6.25rem;
     height: 6.25rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -108,13 +108,13 @@ ul {
 }
 
 .nav-menu a {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1875rem;
     font-weight: 500;
-    color: #374151;
+    color: #4b5563;
     text-decoration: none;
-    letter-spacing: 0.024rem;
-    transition: color 0.3s;
+    letter-spacing: 0.02em;
+    transition: color 0.3s ease;
 }
 
 .nav-menu a:hover,
@@ -125,39 +125,39 @@ ul {
 .header-right {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
-.phone-contact {
+.phone-number {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
 .phone-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
 
-.phone-contact span {
-    font-family: 'Lato', sans-serif;
+.phone-number span {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1875rem;
     font-weight: 500;
     color: #1b2851;
-    letter-spacing: 0.024rem;
+    letter-spacing: 0.02em;
 }
 
 .btn-appointment {
     padding: 0.75rem 1.5rem;
+    background-color: transparent;
     border: 1px solid #1b2851;
     border-radius: 9999px;
-    background-color: transparent;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #1b2851;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
 }
 
 .btn-appointment:hover {
@@ -271,7 +271,7 @@ ul {
 }
 
 .hero-description {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1875rem; /* 19px */
     line-height: 1.8;
     color: #2a2c34;
@@ -298,7 +298,7 @@ ul {
 }
 
 .value-item span {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px */
     color: #2a2c34;
 }
@@ -317,7 +317,7 @@ ul {
 }
 
 .trusted-badge span {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px */
     color: #2a2c34;
 }
@@ -336,7 +336,7 @@ ul {
 }
 
 .hero-tagline span {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9375rem; /* 15px */
     font-weight: 500;
     color: #1b2851;
@@ -379,13 +379,13 @@ ul {
 
 .rating-text {
     margin-left: 0.5rem;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px */
     color: #2a2c34;
 }
 
 .testimonial-text {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.9375rem; /* 15px */
     line-height: 1.5;
     color: #2a2c34;
@@ -407,7 +407,7 @@ ul {
 }
 
 .author-name {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px */
     font-weight: 500;
     color: #1b2851;
@@ -441,7 +441,7 @@ ul {
 }
 
 .assessment-content p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem; /* 20px */
     line-height: 1.5;
     color: #1b2851;
@@ -489,7 +489,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px */
     font-weight: 600;
     color: #1b2851;
@@ -497,14 +497,14 @@ ul {
 }
 
 .rating-score {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem; /* 16px */
     font-weight: 600;
     color: #1b2851;
 }
 
 .rating-description {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem; /* 14px */
     color: #666;
 }
@@ -530,7 +530,7 @@ ul {
 }
 
 .section-description {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1875rem; /* 19px */
     line-height: 1.6;
     color: #2a2c34;
@@ -622,7 +622,7 @@ ul {
 }
 
 .service-description {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem; /* 16px */
     line-height: 1.5;
     color: #2a2c34;
@@ -744,7 +744,7 @@ ul {
 }
 
 .step p {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1875rem; /* 19px */
     line-height: 1.6;
     color: #1b2851;
@@ -789,7 +789,7 @@ ul {
 }
 
 .social-proof h2 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.5rem; /* 40px */
     font-weight: 700;
     color: #1b2851;
@@ -820,7 +820,7 @@ ul {
 }
 
 .stat-label {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem; /* 16px */
     color: #1b2851;
 }
@@ -846,7 +846,7 @@ ul {
 }
 
 .testimonial-quote {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1875rem; /* 19px */
     font-weight: 500;
     line-height: 1.5;
@@ -859,7 +859,7 @@ ul {
 }
 
 .author-service {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem; /* 16px */
     color: #414c75;
     margin-top: 0.25rem;
@@ -880,7 +880,7 @@ ul {
 }
 
 .cta-container h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 2.5rem;
@@ -889,7 +889,7 @@ ul {
 }
 
 .cta-container > p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     line-height: 2.0625rem;
     color: #414c75;
@@ -911,7 +911,7 @@ ul {
     background-color: #1b2851;
     border: none;
     border-radius: 9999px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     font-weight: 500;
     color: #f7f4f0;
@@ -934,7 +934,7 @@ ul {
     background-color: #ffffff;
     border: 2px solid #1b2851;
     border-radius: 9999px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.125rem;
     font-weight: 500;
     color: #1b2851;
@@ -948,7 +948,7 @@ ul {
 }
 
 .cta-note {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #414c75;
@@ -988,20 +988,20 @@ ul {
 }
 
 .footer-brand .footer-logo span {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     color: #ffffff;
 }
 
 .footer-brand p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.4375rem;
     color: #d1d5db;
 }
 
 .footer h4 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
     color: #ffffff;
@@ -1016,7 +1016,7 @@ ul {
 }
 
 .footer-links a {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #d1d5db;
@@ -1043,7 +1043,7 @@ ul {
 }
 
 .contact-item span {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #d1d5db;
@@ -1071,7 +1071,7 @@ ul {
 }
 
 .footer-connect p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.75rem;
     line-height: 1.25rem;
     color: #9ca3af;
@@ -1084,7 +1084,7 @@ ul {
 }
 
 .footer-bottom p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #9ca3af;
