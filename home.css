@@ -981,10 +981,9 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('home_assets/background-social-proof.svg');
+    background-image: url('home_assets/social_bg.svg');
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
     z-index: 0;
     pointer-events: none;
 }
@@ -1015,16 +1014,22 @@ ul {
 .stats-container {
     display: flex;
     justify-content: center;
-    gap: 0;
+    gap: 2rem;
     margin-bottom: 4rem;
     position: relative;
     z-index: 1;
+    max-width: 1136px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .stat {
     text-align: center;
-    padding: 0 2rem;
-    border-right: 1px solid #e5e7eb;
+    padding: 0;
+    width: 284px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .stat:last-child {
@@ -1067,6 +1072,9 @@ ul {
     border-radius: 12px;
     padding: 2.5rem;
     position: relative;
+    min-height: 273px;
+    display: flex;
+    flex-direction: column;
 }
 
 .bg-beige {
@@ -1077,8 +1085,15 @@ ul {
     background-color: #e7edf8;
 }
 
+.testimonial-footer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
 .author-image-wrapper {
-    margin-bottom: 1rem;
+    margin-bottom: 0;
 }
 
 .author-avatar-large {
@@ -1100,7 +1115,8 @@ ul {
 }
 
 .social-proof .author-info {
-    margin-left: 0; /* Reset from previous CSS */
+    margin-left: 0;
+    text-align: left;
 }
 
 .social-proof .author-name {
