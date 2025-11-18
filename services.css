@@ -45,6 +45,7 @@ img {
 }
 
 .disclaimer-content p {
+    font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
     line-height: 1.625rem;
     color: #fffdfa;
@@ -87,7 +88,7 @@ img {
 }
 
 .nav-menu a {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.1875rem;
     font-weight: 500;
     color: #4b5563;
@@ -163,7 +164,7 @@ img {
 }
 
 .hero-section p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.1875rem;
     font-weight: 500;
     line-height: 1.5;
@@ -249,7 +250,7 @@ img {
 
 /* Service Description */
 .service-content p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.1875rem;
     font-weight: 500;
     line-height: 1.5;
@@ -302,7 +303,7 @@ img {
 }
 
 .areas-header p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.125rem;
     line-height: 1.75rem;
     color: #414c75;
@@ -360,7 +361,7 @@ img {
 }
 
 .area-card li {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
     color: #414c75;
     line-height: 1.5rem;
@@ -390,7 +391,7 @@ img {
 }
 
 .cta-container > p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.25rem;
     line-height: 2.0625rem;
     color: #414c75;
@@ -449,7 +450,7 @@ img {
 }
 
 .cta-note {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
     line-height: 1.25rem;
     color: #414c75;
