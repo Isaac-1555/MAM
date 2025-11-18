@@ -951,7 +951,8 @@ ul {
 }
 
 .connector-line-wrapper {
-    display: none;
+    width: 120px;       /* desired visible length */
+    overflow: hidden;
 }
 
 .connector-line {
